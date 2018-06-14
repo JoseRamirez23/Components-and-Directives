@@ -1,2 +1,6 @@
+<game-control (numberCreated)="number=$event"></game-control>
+{{number % 2}}
 
+<even *ngIf="number % 2"></even>
 
+<odd *ngIf="!(number % 2)"></odd>
